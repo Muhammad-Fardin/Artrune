@@ -1,5 +1,4 @@
 import React from 'react'
-import { surpriseMePrompts } from '../constants'
 
 const FormField = ({labelName, type, name, placeholder, value, handleChange, isSurpriseMe, handleSurpriseMe}) => {
   return (
