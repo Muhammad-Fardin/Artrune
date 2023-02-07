@@ -1,12 +1,12 @@
 import React from 'react'
-import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
+import { HashRouter, Link, Route, Routes } from 'react-router-dom';
 import './App.css';
 import { logo } from './assets';
 import { Home, CreatePost } from './components';
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <header className="w-full flex justify-between items-center bg-white sm:px-8 px-4 py-4 border-b border-b-[#e6ebf4]">
         <Link to='/'>
           <img src={logo} alt="logo" className="1-28 object-contain" />
@@ -25,7 +25,7 @@ const App = () => {
       </main>
 
 
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
